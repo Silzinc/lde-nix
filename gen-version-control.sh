@@ -12,10 +12,13 @@ fi
 
 nix_file="lpm.nix"
 repo="codebycruz/lpm"
-releaseTag="$(
-    git -c "versionsort.suffix=-" ls-remote --tags --sort="v:refname" \
-        "https://github.com/$repo" | tail --lines=1 | cut --delimiter="/" --fields=3
-)"
+releaseTag="$0"
+if [ "$releaseTag" = "" ]; then
+    releaseTag="$(
+        git -c "versionsort.suffix=-" ls-remote --tags --sort="v:refname" \
+            "https://github.com/$repo" | tail --lines=1 | cut --delimiter="/" --fields=3
+    )"
+fi
 
 attrs() {
     indent="      "
