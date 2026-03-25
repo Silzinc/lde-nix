@@ -12,7 +12,7 @@ fi
 
 nix_file="lpm.nix"
 repo="codebycruz/lpm"
-releaseTag="$0"
+releaseTag="$1"
 if [ "$releaseTag" = "" ]; then
     releaseTag="$(
         git -c "versionsort.suffix=-" ls-remote --tags --sort="v:refname" \
