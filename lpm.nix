@@ -5,19 +5,19 @@
 
 let
   # GENERATED VERSION CONTROL - BEGIN
-  releaseTag = "v0.7.2";
+  releaseTag = "nightly";
   platform_attrs = {
     "aarch64-darwin" = {
-      url = "https://github.com/codebycruz/lpm/releases/download/v0.7.2/lpm-macos-aarch64";
-      sha256 = "0bi25gcfaq37l1msklrxha7w2k26z5al001zyqbwycjhjk67cha7";
+      url = "https://github.com/codebycruz/lpm/releases/download/nightly/lpm-macos-aarch64";
+      sha256 = "179jqvwsid8c34yvj29k4dm0z7y0yd3xyjmf1k701ghdgv145xhc";
     };
     "aarch64-linux" = {
-      url = "https://github.com/codebycruz/lpm/releases/download/v0.7.2/lpm-linux-aarch64";
-      sha256 = "1j9r7p3dav92cfilmdm9yk6qs0pc8h0adny72c8xz48kfi6wdris";
+      url = "https://github.com/codebycruz/lpm/releases/download/nightly/lpm-linux-aarch64";
+      sha256 = "0698vzymygwwfay527pp863lpmn3lyqdx0pcn652bdhr2vp0h0wg";
     };
     "x86_64-linux" = {
-      url = "https://github.com/codebycruz/lpm/releases/download/v0.7.2/lpm-linux-x86-64";
-      sha256 = "0sai4g5wmanaq4b8vbc8vmg7h2nikgrm2qbw1jin5x77md94zql1";
+      url = "https://github.com/codebycruz/lpm/releases/download/nightly/lpm-linux-x86-64";
+      sha256 = "0vbw03119lz9s5cvc25fvylxxlm133rcw9xawcy26sgvwahjdmwx";
     };
   };
   # GENERATED VERSION CONTROL - END
