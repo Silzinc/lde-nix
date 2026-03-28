@@ -17,7 +17,7 @@
     {
       packages = forEachSystem (
         system: pkgs: {
-          default = (import ./lpm.nix) {
+          default = (import ./lde.nix) {
             inherit pkgs;
             inherit system;
           };

@@ -10,8 +10,8 @@ if ! type nix-prefetch-url &>/dev/null; then
     exit 1
 fi
 
-nix_file="lpm.nix"
-repo="codebycruz/lpm"
+nix_file="lde.nix"
+repo="lde-org/lde"
 releaseTag="$1"
 if [ "$releaseTag" = "" ]; then
     releaseTag="$(
@@ -22,7 +22,7 @@ fi
 
 attrs() {
     indent="      "
-    target="lpm-$1-$2"
+    target="lde-$1-$2"
     url="https://github.com/$repo/releases/download/$releaseTag/$target"
     echo "${indent}url = \"$url\";"
     sha256="$(nix-prefetch-url "$url" 2>/dev/null)"
